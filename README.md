@@ -4,7 +4,7 @@
 
   This project servers as a basis to learning the foundation of building a progressive web application, or PWA. The project itself is a text editor, that features online editing, offline editing, and creating a downloadable application that can be used on the go. It provides caching to save progress of your edits so you have access to code and notes anywhere, anytime. And the ability to save and upload your edits to the server once you reach access to the server again.
 
-  Link to deployed application: --coming soon--
+  Link to deployed application: [https://progressive-web-applications-pwa-text-usng.onrender.com/](https://progressive-web-applications-pwa-text-usng.onrender.com/)
   
   Link to Project: [https://github.com/RussellBooth/Progressive-Web-Applications-PWA-Text-Editor](https://github.com/RussellBooth/Progressive-Web-Applications-PWA-Text-Editor)
 
