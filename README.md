@@ -1,144 +1,83 @@
 # 19 Progressive Web Applications (PWA): Text Editor
 
-## Your Task
+ ## Description
 
-As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.
+  This project servers as a basis to learning the foundation of building a progressive web application, or PWA. The project itself is a text editor, that features online editing, offline editing, and creating a downloadable application that can be used on the go. It provides caching to save progress of your edits so you have access to code and notes anywhere, anytime. And the ability to save and upload your edits to the server once you reach access to the server again.
 
-Your task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+  Link to deployed application: --coming soon--
+  
+  Link to Project: [https://github.com/RussellBooth/Progressive-Web-Applications-PWA-Text-Editor](https://github.com/RussellBooth/Progressive-Web-Applications-PWA-Text-Editor)
 
-To build this text editor, you will start with an existing application and implement methods for getting and storing data to an IndexedDB database. You will use a package called `idb`, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
+  ## Table of Contents
 
-You will deploy this full-stack application to Render using the [Render Deployment Guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/render/render-deployment-guide).
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
 
-**Important**: Make sure your submission includes the `.npmrc` file in this starter code.  This will ensure your application will deploy properly to Render.
+  ## Installation
 
-## User Story
+  Use the package manager npm to install J.A.T.E.
 
-```md
-AS A developer
-I WANT to create notes or code snippets with or without an internet connection
-SO THAT I can reliably retrieve them for later use
-```
+  ```bash
+ npm install
+ ```
+  
 
-## Acceptance Criteria
+  ## Usage
 
-```md
-GIVEN a text editor web application
-WHEN I open my application in my editor
-THEN I should see a client server folder structure
-WHEN I run `npm run start` from the root directory
-THEN I find that my application should start up the backend and serve the client
-WHEN I run the text editor application from my terminal
-THEN I find that my JavaScript files have been bundled using webpack
-WHEN I run my webpack plugins
-THEN I find that I have a generated HTML file, service worker, and a manifest file
-WHEN I use next-gen JavaScript in my application
-THEN I find that the text editor still functions in the browser without errors
-WHEN I open the text editor
-THEN I find that IndexedDB has immediately created a database storage
-WHEN I enter content and subsequently click off of the DOM window
-THEN I find that the content in the text editor has been saved with IndexedDB
-WHEN I reopen the text editor after closing it
-THEN I find that the content in the text editor has been retrieved from our IndexedDB
-WHEN I click on the Install button
-THEN I download my web application as an icon on my desktop
-WHEN I load my web application
-THEN I should have a registered service worker using workbox
-WHEN I register a service worker
-THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
-WHEN I deploy to Render
-THEN I should have proper build scripts for a webpack application
-```
+  ```bash
+  npm run start
 
-## Mock-Up
+  # open your browser and navigate to localhost:3000
 
-The following animation demonstrates the application functionality:
+  # the text editor will be open and running
 
-![Demonstration of the finished Module 19 Challenge being used in the browser and then installed.](./Assets/00-demo.gif)
+  # type into the browser and data will be saved and cached locally
 
-The following image shows the application's `manifest.json` file:
+  # to download a working offline version to use, click the download button in the url section to begin downlaod
 
-![Demonstration of the finished Module 19 Challenge with a manifest file in the browser.](./Assets/01-manifest.png)
+  # you can now use the application online, offline, and on the go
+  ```
 
-The following image shows the application's registered service worker:
+  ## License
 
-![Demonstration of the finished Module 19 Challenge with a registered service worker in the browser.](./Assets/02-service-worker.png)
+  MIT License
 
-The following image shows the application's IndexedDB storage:
+  ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
-![Demonstration of the finished Module 19 Challenge with a IndexedDB storage named 'jate' in the browser.](./Assets/03-idb-storage.png)
+  ![License: MIT](https://choosealicense.com/licenses/mit/)
 
-## Grading Requirements
+  MIT License
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+    Copyright (c) [2024] [Russell Booth]
+    
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
 
-This Challenge is graded based on the following criteria:
 
-### Technical Acceptance Criteria: 40%
+  ## Questions
 
-* Satisfies all of the above acceptance criteria plus the following:
+  If you have any questions feel free to reach out and contact me via email at: russellbooth121@gmail.com.
+  Or follow other projects on GitHub at https://github.com/RussellBooth.
 
-  * Uses IndexedDB to create an object store and includes both GET and PUT methods
+  ## Acknowledgments/Credits
 
-  * The application works without an internet connection
-
-  * Automatically saves content inside the text editor when the DOM window is unfocused
-
-  * Bundled with webpack
-
-  * Create a service worker with workbox that Caches static assets
-
-  * The application should use babel in order to use async / await
-
-  * Application must have a generated `manifest.json` using the `WebpackPwaManifest` plug-in
-
-  * Can be installed as a Progressive Web Application
-
-### Deployment: 32%
-
-* Application deployed to Render at live URL with build scripts
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+    The UC Davis Coding Bootcamp. For hosting an amazing program with very dedicated staff and support
+    The bulk of the code was sourced by the CodeEx bootcamp with adjustments made to create a functioning appplication.
+    My wonderful instructor and TA, Alex Kauffman and Zach Warner.
